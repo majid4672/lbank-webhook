@@ -1,0 +1,8 @@
+
+services:
+  - type: web
+    name: lbank-webhook
+    env: python
+    buildCommand: ""
+    startCommand: "gunicorn webhook:app"
+    plan: free
